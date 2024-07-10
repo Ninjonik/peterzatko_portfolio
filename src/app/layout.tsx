@@ -13,16 +13,20 @@ const fontSans = FontSans({
 
 export const metadata: Metadata = {
 	title: {
-		default: "Next.JS Starter Template",
+		default: "Ninjonik",
 		template: "%s | Superior Software Solutions",
 	},
-	description: "Starter template for Next.JS projects using Tailwind CSS, ShadCN UI and Aceternity UI.",
+	description: "Passionate Software Developer && Designer.",
+	icons: {
+		icon: "/img/logos/iglogo.png",
+	},
 };
 
 const RootLayout = ({ children }: { children: React.ReactNode }) => {
 	return (
 		<html lang="en">
-			<body className={cn("min-h-screen bg-background font-sans antialiased", fontSans.variable)}>{children}</body>
+		<link rel="icon" href="/img/logos/iglogo.png" sizes="any" />
+		<body className={cn("min-h-screen bg-background font-sans antialiased", fontSans.variable)}>{children}</body>
 		</html>
 	);
 };

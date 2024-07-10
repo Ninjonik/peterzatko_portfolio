@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import React from "react";
 import { AuroraBackground } from "@/components/ui/AuroraBackground";
+import { IconArrowDown } from '@tabler/icons-react';
 
 export const MainBackground = () => {
 	return (
@@ -19,7 +20,7 @@ export const MainBackground = () => {
 			>
 				<div className="text-center text-3xl font-bold dark:text-white md:text-7xl">Ninjonik</div>
 				<div className="py-4 text-base font-extralight dark:text-neutral-200 md:text-4xl">Passionate Software Developer && Designer</div>
-				<button className="w-fit rounded-full bg-black px-4 py-2 text-white dark:bg-white dark:text-black">Continue</button>
+				<a className="w-fit rounded-full bg-black px-4 py-2 text-white dark:bg-white dark:text-black flex flex-row gap-1" href={"#power"}><span className={"animate-bounce"}><IconArrowDown /></span> Continue</a>
 			</motion.div>
 		</AuroraBackground>
 	);

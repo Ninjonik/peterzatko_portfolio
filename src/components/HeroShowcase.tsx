@@ -7,96 +7,93 @@ export function HeroShowcase() {
 }
 export const products = [
 	{
-		title: "Moonbeam",
-		link: "https://gomoonbeam.com",
-		thumbnail:
-			"https://aceternity.com/images/products/thumbnails/new/moonbeam.png",
+		title: "Aeron Racing",
+		link: "https://areonracing.com/",
+		thumbnail: "/img/projects/areonracing.png",
 	},
 	{
-		title: "Cursor",
-		link: "https://cursor.so",
-		thumbnail:
-			"https://aceternity.com/images/products/thumbnails/new/cursor.png",
+		title: "HOI4Intel",
+		link: "https://hoi.igportals.eu/",
+		thumbnail: "/img/projects/hoi4intel.png",
 	},
 	{
-		title: "Rogue",
-		link: "https://userogue.com",
-		thumbnail:
-			"https://aceternity.com/images/products/thumbnails/new/rogue.png",
-	},
-
-	{
-		title: "Editorially",
-		link: "https://editorially.org",
-		thumbnail:
-			"https://aceternity.com/images/products/thumbnails/new/editorially.png",
+		title: "HOI4Intel",
+		link: "https://hoi.igportals.eu/",
+		thumbnail: "/img/projects/hoi4intel2.png",
 	},
 	{
-		title: "Editrix AI",
-		link: "https://editrix.ai",
-		thumbnail:
-			"https://aceternity.com/images/products/thumbnails/new/editrix.png",
+		title: "HOI4Intel",
+		link: "https://hoi.igportals.eu/",
+		thumbnail: "/img/projects/hoi4intel3.png",
 	},
 	{
-		title: "Pixel Perfect",
-		link: "https://app.pixelperfect.quest",
-		thumbnail:
-			"https://aceternity.com/images/products/thumbnails/new/pixelperfect.png",
-	},
-
-	{
-		title: "Algochurn",
-		link: "https://algochurn.com",
-		thumbnail:
-			"https://aceternity.com/images/products/thumbnails/new/algochurn.png",
+		title: "HOI4Intel Discord Bot",
+		link: "https://hoi.igportals.eu/",
+		thumbnail: "/img/projects/hoi4intelbot.png",
 	},
 	{
-		title: "Aceternity UI",
-		link: "https://ui.aceternity.com",
-		thumbnail:
-			"https://aceternity.com/images/products/thumbnails/new/aceternityui.png",
+		title: "HOI4Intel Discord Bot",
+		link: "https://hoi.igportals.eu/",
+		thumbnail: "/img/projects/hoi4intelbot2.png",
 	},
 	{
-		title: "Tailwind Master Kit",
-		link: "https://tailwindmasterkit.com",
-		thumbnail:
-			"https://aceternity.com/images/products/thumbnails/new/tailwindmasterkit.png",
+		title: "HOI4Intel Discord Bot",
+		link: "https://hoi.igportals.eu/",
+		thumbnail: "/img/projects/hoi4intelbot3.png",
 	},
 	{
-		title: "SmartBridge",
-		link: "https://smartbridgetech.com",
-		thumbnail:
-			"https://aceternity.com/images/products/thumbnails/new/smartbridge.png",
+		title: "HOI4Intel Discord Bot",
+		link: "https://hoi.igportals.eu/",
+		thumbnail: "/img/projects/hoi4intelbot4.png",
 	},
 	{
-		title: "Renderwork Studio",
-		link: "https://renderwork.studio",
-		thumbnail:
-			"https://aceternity.com/images/products/thumbnails/new/renderwork.png",
-	},
-
-	{
-		title: "Creme Digital",
-		link: "https://cremedigital.com",
-		thumbnail:
-			"https://aceternity.com/images/products/thumbnails/new/cremedigital.png",
+		title: "HOI4Intel Dashboard",
+		link: "https://hoi.igportals.eu/",
+		thumbnail: "/img/projects/hoi4inteldb.png",
 	},
 	{
-		title: "Golden Bells Academy",
-		link: "https://goldenbellsacademy.com",
-		thumbnail:
-			"https://aceternity.com/images/products/thumbnails/new/goldenbellsacademy.png",
+		title: "HOI4Intel Dashboard",
+		link: "https://hoi.igportals.eu/",
+		thumbnail: "/img/projects/hoi4inteldb2.png",
 	},
 	{
-		title: "Invoker Labs",
-		link: "https://invoker.lol",
-		thumbnail:
-			"https://aceternity.com/images/products/thumbnails/new/invoker.png",
+		title: "HOI4Intel Public Player Database",
+		link: "https://db.igportals.eu/",
+		thumbnail: "/img/projects/hoi4intelup.png",
 	},
 	{
-		title: "E Free Invoice",
-		link: "https://efreeinvoice.com",
-		thumbnail:
-			"https://aceternity.com/images/products/thumbnails/new/efreeinvoice.png",
+		title: "HOI4Intel Public Player Database",
+		link: "https://db.igportals.eu/",
+		thumbnail: "/img/projects/hoi4intelup2.png",
+	},
+	{
+		title: "HOI4Intel Public Player Database",
+		link: "https://db.igportals.eu/",
+		thumbnail: "/img/projects/hoi4intelup3.png",
+	},
+	{
+		title: "IGPortals Wiki.js",
+		link: "https://wiki.igportals.eu/",
+		thumbnail: "/img/projects/igportalswiki.png",
+	},
+	{
+		title: "Nexly",
+		link: "https://nexly.igportals.eu/",
+		thumbnail: "/img/projects/nexly1.png",
+	},
+	{
+		title: "Nexly",
+		link: "https://nexly.igportals.eu/",
+		thumbnail: "/img/projects/nexly2.png",
+	},
+	{
+		title: "Nexly",
+		link: "https://nexly.igportals.eu/",
+		thumbnail: "/img/projects/nexly3.png",
+	},
+	{
+		title: "Uptime Kuma Status Page",
+		link: "https://status.igportals.eu/status/hoi4intel",
+		thumbnail: "/img/projects/status.png",
 	},
 ];

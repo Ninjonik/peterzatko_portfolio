@@ -12,11 +12,14 @@ import { Spotlight } from "@/components/ui/Spotlight";
 import { ContactForm } from "@/components/ContactForm";
 import { Vortex } from "@/components/ui/Vortex";
 import { WobbleCard } from "@/components/ui/WobbleCard";
+import { useEffect } from "react";
+import { Skills } from "@/components/Skills";
 
 const HomePage = () => {
+
 	return (
-		<article className={"flex flex-col"}>
-			<Navbar />
+		<article className={"flex flex-col text-center"}>
+			{/*<Navbar />*/}
 			<MainBackground />
 			<ContainerScroll
 				titleComponent={
@@ -48,49 +51,56 @@ const HomePage = () => {
 					<div className="max-w-xs">
 						<h2
 							className="text-left text-balance text-base md:text-xl lg:text-3xl font-semibold tracking-[-0.015em] text-white">
-							Gippity AI powers the entire universe
+							Crafting Digital Experiences with Passion & Precision
 						</h2>
-						<p className="mt-4 text-left  text-base/6 text-neutral-200">
-							With over 100,000 mothly active bot users, Gippity AI is the most
-							popular AI platform for developers.
+						<p className="mt-4 text-left text-base/6 text-neutral-200">
+							Dive into the world of web development with me, where every line of code tells a story. With a deep-rooted
+							love for JavaScript, React, and TypeScript, I transform complex problems into elegant solutions. My
+							portfolio showcases a blend of creativity, technical skill, and a relentless pursuit of excellence. Let&apos;s
+							build something amazing together.
 						</p>
 					</div>
 					<Image
-						src="/linear.webp"
+						src="/img/projects/hoi4intel.png"
 						width={500}
 						height={500}
 						alt="linear demo image"
-						className="absolute -right-4 lg:-right-[40%] grayscale filter -bottom-10 object-contain rounded-2xl"
+						className="absolute -right-4 lg:-right-[20%] grayscale filter -bottom-10 object-contain rounded-2xl"
 					/>
 				</WobbleCard>
 				<WobbleCard containerClassName="col-span-1 min-h-[300px]">
 					<h2
-						className="max-w-80  text-left text-balance text-base md:text-xl lg:text-3xl font-semibold tracking-[-0.015em] text-white">
-						No shirt, no shoes, no weapons.
+						className="max-w-80 text-left text-balance text-base md:text-xl lg:text-3xl font-semibold tracking-[-0.015em] text-white">
+						Mastering the Art of Web Design
 					</h2>
-					<p className="mt-4 max-w-[26rem] text-left  text-base/6 text-neutral-200">
-						If someone yells “stop!”, goes limp, or taps out, the fight is over.
+					<p className="mt-4 max-w-[26rem] text-left text-base/6 text-neutral-200">
+						From the subtle nuances of CSS to the dynamic capabilities of Tailwind CSS and Material UI, my journey in
+						web design is a testament to creativity meeting functionality. Crafting seamless user experiences with
+						shadcn/ui and exploring the latest in modern UI libraries, I bring websites to life with precision and
+						flair. Let&apos;s shape the digital world together, one pixel at a time.
 					</p>
 				</WobbleCard>
 				<WobbleCard
-					containerClassName="col-span-1 lg:col-span-3 bg-blue-900 min-h-[500px] lg:min-h-[600px] xl:min-h-[300px]">
+					containerClassName="col-span-1 lg:col-span-3 bg-blue-900 min-h-[500px] lg:min-h-[600px] xl:min-h-[300px]"
+				>
 					<div className="max-w-sm">
 						<h2
-							className="max-w-sm md:max-w-lg  text-left text-balance text-base md:text-xl lg:text-3xl font-semibold tracking-[-0.015em] text-white">
-							Signup for blazing-fast cutting-edge state of the art Gippity AI
-							wrapper today!
+							className="max-w-sm md:max-w-lg text-left text-balance text-base md:text-xl lg:text-3xl font-semibold tracking-[-0.015em] text-white">
+							Elevating Experiences Through Backend Mastery
 						</h2>
-						<p className="mt-4 max-w-[26rem] text-left  text-base/6 text-neutral-200">
-							With over 100,000 mothly active bot users, Gippity AI is the most
-							popular AI platform for developers.
+						<p className="mt-4 max-w-[26rem] text-left text-base/6 text-neutral-200">
+							Dive into the core of digital innovation with me, where PHP Laravel and Python form the backbone of robust
+							applications. Crafting seamless Discord bots and APIs, I bridge the gap between idea and implementation,
+							ensuring every project not only meets but exceeds expectations. Lets engineer solutions that drive
+							success and redefine what is possible in the digital realm.
 						</p>
 					</div>
 					<Image
-						src="/linear.webp"
-						width={500}
-						height={500}
-						alt="linear demo image"
-						className="absolute -right-10 md:-right-[40%] lg:-right-[20%] -bottom-10 object-contain rounded-2xl"
+						src="/img/projects/hoi4intel_800_600.png"
+						width={600}
+						height={400}
+						alt="Backend development demo image"
+						className="absolute -bottom-[20%] right-0 object-center rounded-2xl"
 					/>
 				</WobbleCard>
 			</div>
@@ -112,7 +122,11 @@ const HomePage = () => {
 			{/*	</div>*/}
 			{/*</section>*/}
 			<HeroShowcase />
-			<TopPortfolio />
+
+			<Skills />
+
+			{/*<TopPortfolio />*/}
+
 			<div
 				className="h-[40rem] w-full flex md:items-center md:justify-center  bg-slate-950 antialiased bg-grid-white/[0.02] relative overflow-hidden">
 				<Spotlight

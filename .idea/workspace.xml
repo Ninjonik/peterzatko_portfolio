@@ -5,12 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e85cdc0c-3632-4912-86d2-7702e49039d4" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/app/utils/cn.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/loading.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Skills.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/ui/MultiStepLoader.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/(home)/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/(home)/page.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/globals.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/globals.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/layout.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/HeroShowcase.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/HeroShowcase.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/MainBackground.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MainBackground.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/layout/Footer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layout/Footer.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ui/ContainerScroll.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/ContainerScroll.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ui/HeroParallax.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/HeroParallax.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ui/Lamp.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/Lamp.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tailwind.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/tailwind.config.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -111,6 +120,14 @@
       <updated>1718899743108</updated>
       <workItem from="1718899744517" duration="3815000" />
       <workItem from="1718903732503" duration="7613000" />
+      <workItem from="1719069641118" duration="27000" />
+      <workItem from="1720359851142" duration="614000" />
+      <workItem from="1720361301137" duration="592000" />
+      <workItem from="1720439464911" duration="592000" />
+      <workItem from="1720527206094" duration="562000" />
+      <workItem from="1720545766258" duration="11000" />
+      <workItem from="1720549380457" duration="7000" />
+      <workItem from="1720603412321" duration="5108000" />
     </task>
     <servers />
   </component>

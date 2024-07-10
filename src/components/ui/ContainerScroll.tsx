@@ -29,7 +29,7 @@ export const ContainerScroll = ({ titleComponent, children }: { titleComponent: 
 	const translate = useTransform(scrollYProgress, [0, 1], [0, -100]);
 
 	return (
-		<div className="relative flex h-[60rem] items-center justify-center p-2 md:h-[80rem] md:p-20" ref={containerRef}>
+		<div className="relative flex h-[60rem] items-center justify-center p-2 md:h-[80rem] md:p-20" ref={containerRef} id={"power"}>
 			<div
 				className="relative w-full py-10 md:py-40"
 				style={{
