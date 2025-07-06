@@ -13,7 +13,7 @@ const fontSans = FontSans({
 
 export const metadata: Metadata = {
 	title: {
-		default: "Ninjonik",
+		default: "Peter Zaťko",
 		template: "%s | Superior Software Solutions",
 	},
 	description: "Passionate Software Developer && Designer.",

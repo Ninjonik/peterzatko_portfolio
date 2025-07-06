@@ -12,69 +12,24 @@ export const products = [
 		thumbnail: "/img/projects/areonracing.png",
 	},
 	{
+		title: "Planiosa",
+		link: "https://planiosa.sk/",
+		thumbnail: "/img/projects/planiosa1.png",
+	},
+	{
 		title: "HOI4Intel",
 		link: "https://hoi.igportals.eu/",
 		thumbnail: "/img/projects/hoi4intel.png",
 	},
 	{
-		title: "HOI4Intel",
-		link: "https://hoi.igportals.eu/",
-		thumbnail: "/img/projects/hoi4intel2.png",
+		title: "BestCamp Orava",
+		link: "https://bestcamporava.sk/",
+		thumbnail: "/img/projects/bestcamporava1.png",
 	},
 	{
-		title: "HOI4Intel",
-		link: "https://hoi.igportals.eu/",
-		thumbnail: "/img/projects/hoi4intel3.png",
-	},
-	{
-		title: "HOI4Intel Discord Bot",
-		link: "https://hoi.igportals.eu/",
-		thumbnail: "/img/projects/hoi4intelbot.png",
-	},
-	{
-		title: "HOI4Intel Discord Bot",
-		link: "https://hoi.igportals.eu/",
-		thumbnail: "/img/projects/hoi4intelbot2.png",
-	},
-	{
-		title: "HOI4Intel Discord Bot",
-		link: "https://hoi.igportals.eu/",
-		thumbnail: "/img/projects/hoi4intelbot3.png",
-	},
-	{
-		title: "HOI4Intel Discord Bot",
-		link: "https://hoi.igportals.eu/",
-		thumbnail: "/img/projects/hoi4intelbot4.png",
-	},
-	{
-		title: "HOI4Intel Dashboard",
-		link: "https://hoi.igportals.eu/",
-		thumbnail: "/img/projects/hoi4inteldb.png",
-	},
-	{
-		title: "HOI4Intel Dashboard",
-		link: "https://hoi.igportals.eu/",
-		thumbnail: "/img/projects/hoi4inteldb2.png",
-	},
-	{
-		title: "HOI4Intel Public Player Database",
-		link: "https://db.igportals.eu/",
-		thumbnail: "/img/projects/hoi4intelup.png",
-	},
-	{
-		title: "HOI4Intel Public Player Database",
-		link: "https://db.igportals.eu/",
-		thumbnail: "/img/projects/hoi4intelup2.png",
-	},
-	{
-		title: "HOI4Intel Public Player Database",
-		link: "https://db.igportals.eu/",
-		thumbnail: "/img/projects/hoi4intelup3.png",
-	},
-	{
-		title: "IGPortals Wiki.js",
-		link: "https://wiki.igportals.eu/",
-		thumbnail: "/img/projects/igportalswiki.png",
+		title: "Wuilting",
+		link: "https://wuilting.vercel.app/",
+		thumbnail: "/img/projects/wuilting.png",
 	},
 	{
 		title: "Nexly",
@@ -82,9 +37,39 @@ export const products = [
 		thumbnail: "/img/projects/nexly1.png",
 	},
 	{
+		title: "Planiosa",
+		link: "https://planiosa.sk/",
+		thumbnail: "/img/projects/planiosa2.png",
+	},
+	{
+		title: "HOI4Intel",
+		link: "https://hoi.igportals.eu/",
+		thumbnail: "/img/projects/hoi4intel2.png",
+	},
+	{
+		title: "BestCamp Orava",
+		link: "https://bestcamporava.sk/",
+		thumbnail: "/img/projects/bestcamporava2.png",
+	},
+	{
 		title: "Nexly",
 		link: "https://nexly.igportals.eu/",
 		thumbnail: "/img/projects/nexly2.png",
+	},
+	{
+		title: "Planiosa",
+		link: "https://planiosa.sk/",
+		thumbnail: "/img/projects/planiosa3.png",
+	},
+	{
+		title: "HOI4Intel",
+		link: "https://hoi.igportals.eu/",
+		thumbnail: "/img/projects/hoi4intel3.png",
+	},
+	{
+		title: "BestCamp Orava",
+		link: "https://bestcamporava.sk/",
+		thumbnail: "/img/projects/bestcamporava3.png",
 	},
 	{
 		title: "Nexly",
@@ -92,8 +77,8 @@ export const products = [
 		thumbnail: "/img/projects/nexly3.png",
 	},
 	{
-		title: "Uptime Kuma Status Page",
-		link: "https://status.igportals.eu/status/hoi4intel",
-		thumbnail: "/img/projects/status.png",
+		title: "Planiosa",
+		link: "https://planiosa.sk/",
+		thumbnail: "/img/projects/planiosa4.png",
 	},
 ];

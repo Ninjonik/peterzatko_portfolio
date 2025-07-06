@@ -1,18 +1,12 @@
 "use client";
 import React from "react";
-import {
-	motion,
-	useScroll,
-	useTransform,
-	useSpring,
-	MotionValue,
-} from "framer-motion";
+import { motion, MotionValue, useScroll, useSpring, useTransform } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
 
 export const HeroParallax = ({
-															 products,
-														 }: {
+	products,
+}: {
 	products: {
 		title: string;
 		link: string;
@@ -30,34 +24,16 @@ export const HeroParallax = ({
 
 	const springConfig = { stiffness: 300, damping: 30, bounce: 100 };
 
-	const translateX = useSpring(
-		useTransform(scrollYProgress, [0, 1], [0, 1000]),
-		springConfig
-	);
-	const translateXReverse = useSpring(
-		useTransform(scrollYProgress, [0, 1], [0, -1000]),
-		springConfig
-	);
-	const rotateX = useSpring(
-		useTransform(scrollYProgress, [0, 0.2], [15, 0]),
-		springConfig
-	);
-	const opacity = useSpring(
-		useTransform(scrollYProgress, [0, 0.2], [0.2, 1]),
-		springConfig
-	);
-	const rotateZ = useSpring(
-		useTransform(scrollYProgress, [0, 0.2], [20, 0]),
-		springConfig
-	);
-	const translateY = useSpring(
-		useTransform(scrollYProgress, [0, 0.2], [-700, 500]),
-		springConfig
-	);
+	const translateX = useSpring(useTransform(scrollYProgress, [0, 1], [0, 1000]), springConfig);
+	const translateXReverse = useSpring(useTransform(scrollYProgress, [0, 1], [0, -1000]), springConfig);
+	const rotateX = useSpring(useTransform(scrollYProgress, [0, 0.2], [15, 0]), springConfig);
+	const opacity = useSpring(useTransform(scrollYProgress, [0, 0.2], [0.2, 1]), springConfig);
+	const rotateZ = useSpring(useTransform(scrollYProgress, [0, 0.2], [20, 0]), springConfig);
+	const translateY = useSpring(useTransform(scrollYProgress, [0, 0.2], [-700, 500]), springConfig);
 	return (
 		<div
 			ref={ref}
-			className="h-[300vh] py-40 overflow-hidden  antialiased relative flex flex-col self-auto [perspective:1000px] [transform-style:preserve-3d]"
+			className="relative flex h-[300vh] flex-col self-auto overflow-hidden py-40 antialiased [perspective:1000px] [transform-style:preserve-3d]"
 		>
 			<Header />
 			<motion.div
@@ -69,31 +45,19 @@ export const HeroParallax = ({
 				}}
 				className=""
 			>
-				<motion.div className="flex flex-row-reverse space-x-reverse space-x-20 mb-20">
+				<motion.div className="mb-20 flex flex-row-reverse space-x-20 space-x-reverse">
 					{firstRow.map((product) => (
-						<ProductCard
-							product={product}
-							translate={translateX}
-							key={product.title}
-						/>
+						<ProductCard product={product} translate={translateX} key={product.title} />
 					))}
 				</motion.div>
-				<motion.div className="flex flex-row  mb-20 space-x-20 ">
+				<motion.div className="mb-20 flex flex-row space-x-20">
 					{secondRow.map((product) => (
-						<ProductCard
-							product={product}
-							translate={translateXReverse}
-							key={product.title}
-						/>
+						<ProductCard product={product} translate={translateXReverse} key={product.title} />
 					))}
 				</motion.div>
-				<motion.div className="flex flex-row-reverse space-x-reverse space-x-20">
+				<motion.div className="flex flex-row-reverse space-x-20 space-x-reverse">
 					{thirdRow.map((product) => (
-						<ProductCard
-							product={product}
-							translate={translateX}
-							key={product.title}
-						/>
+						<ProductCard product={product} translate={translateX} key={product.title} />
 					))}
 				</motion.div>
 			</motion.div>
@@ -103,13 +67,12 @@ export const HeroParallax = ({
 
 export const Header = () => {
 	return (
-		<div className="max-w-7xl relative mx-auto py-20 md:py-40 px-4 w-full  left-0 top-0 flex justify-center items-center flex-col">
-			<h1 className="text-2xl md:text-7xl font-bold dark:text-white">
+		<div className="relative left-0 top-0 mx-auto flex w-full max-w-7xl flex-col items-center justify-center px-4 py-20 md:py-40">
+			<h1 className="text-2xl font-bold dark:text-white md:text-7xl">
 				Portfolio <br />
 			</h1>
-			<p className="max-w-2xl text-base md:text-xl mt-8 dark:text-neutral-200 text-center">
-				I build beautiful products with the latest technologies and frameworks,
-				I am a passionate developer and designer that loves to build
+			<p className="mt-8 max-w-2xl text-center text-base dark:text-neutral-200 md:text-xl">
+				I build beautiful products with the latest technologies and frameworks, I am a passionate developer and designer that loves to build
 				amazing products.
 			</p>
 		</div>
@@ -117,9 +80,9 @@ export const Header = () => {
 };
 
 export const ProductCard = ({
-															product,
-															translate,
-														}: {
+	product,
+	translate,
+}: {
 	product: {
 		title: string;
 		link: string;
@@ -136,24 +99,19 @@ export const ProductCard = ({
 				y: -20,
 			}}
 			key={product.title}
-			className="group/product h-96 w-[30rem] relative flex-shrink-0"
+			className="group/product relative h-96 w-[30rem] flex-shrink-0"
 		>
-			<Link
-				href={product.link}
-				className="block group-hover/product:shadow-2xl "
-			>
+			<Link href={product.link} className="block group-hover/product:shadow-2xl">
 				<Image
 					src={product.thumbnail}
-					height="600"
-					width="600"
-					className="object-cover object-left-top absolute h-full w-full inset-0"
+					height="1600"
+					width="1000"
+					className="absolute inset-0 h-full w-full object-cover object-center"
 					alt={product.title}
 				/>
 			</Link>
-			<div className="absolute inset-0 h-full w-full opacity-0 group-hover/product:opacity-80 bg-black pointer-events-none"></div>
-			<h2 className="absolute bottom-4 left-4 opacity-0 group-hover/product:opacity-100 text-white">
-				{product.title}
-			</h2>
+			<div className="pointer-events-none absolute inset-0 h-full w-full bg-black opacity-0 group-hover/product:opacity-80"></div>
+			<h2 className="absolute bottom-4 left-4 text-white opacity-0 group-hover/product:opacity-100">{product.title}</h2>
 		</motion.div>
 	);
 };
