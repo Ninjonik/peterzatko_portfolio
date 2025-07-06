@@ -5,7 +5,6 @@ import Footer from "@/components/layout/Footer";
 import { FlipWords } from "@/components/ui/FlipWords";
 import { HeroShowcase } from "@/components/HeroShowcase";
 import { Lamp } from "@/components/ui/Lamp";
-import { Spotlight } from "@/components/ui/Spotlight";
 import { ContactForm } from "@/components/ContactForm";
 import { WobbleCard } from "@/components/ui/WobbleCard";
 import { Skills } from "@/components/Skills";
@@ -30,7 +29,7 @@ const HomePage = () => {
 				}
 			>
 				<Image
-					src={`/img/hoi4intelWebsite.png`}
+					src={`/img/projects/planiosa1.png`}
 					alt="hero"
 					height={720}
 					width={1400}
@@ -99,7 +98,7 @@ const HomePage = () => {
 
 			{/*<TopPortfolio />*/}
 
-			<div className="relative flex h-[40rem] w-full overflow-hidden bg-slate-950 antialiased bg-grid-white/[0.02] md:items-center md:justify-center">
+			{/*			<div className="relative flex h-[40rem] w-full overflow-hidden bg-slate-950 antialiased bg-grid-white/[0.02] md:items-center md:justify-center">
 				<Spotlight className="-top-40 left-0 md:-top-20 md:left-60" fill="white" />
 				<div className="relative z-10 mx-auto w-full max-w-7xl p-4 pt-20 md:pt-0">
 					<h1 className="bg-opacity-50 bg-gradient-to-b from-neutral-50 to-neutral-400 bg-clip-text text-center text-4xl font-bold text-transparent md:text-7xl">
@@ -109,7 +108,7 @@ const HomePage = () => {
 						I build meticulously crafted websites that drive results. <br /> Lets turn your online vision into reality.
 					</p>
 				</div>
-			</div>
+			</div>*/}
 			<Lamp />
 			<section className={"w-screen bg-slate-950"}>
 				<div className={"relative -top-48 flex w-full flex-col items-center justify-center bg-slate-950"}>

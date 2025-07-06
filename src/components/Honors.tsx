@@ -55,7 +55,7 @@ export const Honors = () => {
 			issuer: "NETACAD SK",
 			date: "Apr 2025",
 			association: "Ignác Gessay High School of Information Technologies in Tvrdošín",
-			description: ["Second place in group category HS3 out of 29 trios."],
+			description: ["Second place in the group category HS3 out of 29 trios."],
 			type: "award",
 			link: "https://netacad.sk/nag/",
 		},
@@ -73,6 +73,16 @@ export const Honors = () => {
 			type: "award",
 		},
 		// Skills & Certifications
+		{
+			title: "Republican Union of Employers Certificate",
+			issuer: "Republican Union of Employers Slovakia",
+			date: "May 2025",
+			association: "Ignác Gessay High School of Information Technologies in Tvrdošín",
+			description: ["Certificate"],
+			certificateLink: "/img/honors/ruz.png",
+			certificateImage: "/img/honors/ruz.png",
+			type: "certification",
+		},
 		{
 			title: "CCNA: Enterprise Networking, Security, and Automation",
 			issuer: "Cisco Networking Academy",

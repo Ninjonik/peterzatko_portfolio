@@ -38,7 +38,7 @@ export const WorkExperience = () => {
 			description: [
 				"Developing and maintaining the Planiosa platform",
 				"Building robust client-facing web applications with Next.js and React",
-				"Implementing complex database structures and queries",
+				"Implementing complex database structures and queries using Prisma",
 				"Creating responsive user interfaces with Tailwind CSS and TypeScript",
 			],
 			technologies: ["Next.js", "TypeScript", "MySQL", "SQLite", "React.js", "JavaScript", "HTML5", "Tailwind CSS", "CI/CD", "GitHub"],

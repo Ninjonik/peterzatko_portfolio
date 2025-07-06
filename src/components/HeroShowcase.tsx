@@ -72,13 +72,13 @@ export const products = [
 		thumbnail: "/img/projects/bestcamporava3.png",
 	},
 	{
-		title: "Nexly",
-		link: "https://nexly.igportals.eu/",
-		thumbnail: "/img/projects/nexly3.png",
-	},
-	{
 		title: "Planiosa",
 		link: "https://planiosa.sk/",
 		thumbnail: "/img/projects/planiosa4.png",
+	},
+	{
+		title: "Uptime Kuma",
+		link: "https://status.igportals.eu/status/hoi4intel",
+		thumbnail: "/img/projects/status.png",
 	},
 ];
