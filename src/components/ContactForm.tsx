@@ -1,52 +1,52 @@
 "use client";
-import React from "react";
+import React, { useActionState, useEffect, useRef } from "react";
 import { Label } from "@/components/ui/Label";
 import { Input } from "@/components/ui/Input";
 import { cn } from "@/lib/utils";
 import { Textarea } from "@/components/ui/Textarea";
+import sendContactEmail from "./contact";
 
 export function ContactForm() {
-	const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
-		e.preventDefault();
-		console.log("Form submitted");
-	};
-	return (
-		<div className="max-w-md w-full mx-auto rounded-none md:rounded-2xl p-4 md:p-8 shadow-input bg-white dark:bg-black">
-			<h2 className="font-bold text-xl text-neutral-800 dark:text-neutral-200">
-				Contact me
-			</h2>
+	const formRef = useRef<HTMLFormElement>(null);
+	const [state, formAction, isPending] = useActionState(sendContactEmail, null);
 
-			<form className="my-8" onSubmit={handleSubmit}>
-				<div className="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-2 mb-4">
-					<LabelInputContainer>
-						<Label htmlFor="firstname">First name</Label>
-						<Input id="firstname" type="text" />
-					</LabelInputContainer>
-					<LabelInputContainer>
-						<Label htmlFor="lastname">Last name</Label>
-						<Input id="lastname"type="text" />
-					</LabelInputContainer>
-				</div>
-				<LabelInputContainer className="mb-4">
-					<Label htmlFor="email">Email Address</Label>
-					<Input id="email" type="email" />
-				</LabelInputContainer>
-				<LabelInputContainer className="mb-4">
-					<Label htmlFor="subject">Subject</Label>
-					<Input id="subject" placeholder="" type="text" />
-				</LabelInputContainer>
-				<LabelInputContainer className="mb-8">
-					<Label htmlFor="message">Your message</Label>
-					<Textarea placeholder="Type your message here." />
-				</LabelInputContainer>
+	useEffect(() => {
+		if (state?.status === "success") {
+			formRef.current?.reset();
+		}
+	}, [state]);
+
+	return (
+		<div className="mx-auto w-full max-w-md rounded-none bg-white p-4 shadow-input dark:bg-black md:rounded-2xl md:p-8">
+			<h2 className="text-xl font-bold text-neutral-800 dark:text-neutral-200">Contact me</h2>
+
+			<form ref={formRef} action={formAction} className="my-8 flex flex-col gap-4">
+				<Label htmlFor="firstname">First Name</Label>
+				<Input id="firstname" name="firstname" required />
+
+				<Label htmlFor="lastname">Last Name</Label>
+				<Input id="lastname" name="lastname" required />
+
+				<Label htmlFor="email">Email</Label>
+				<Input id="email" name="email" type="email" required />
+
+				<Label htmlFor="subject">Subject</Label>
+				<Input id="subject" name="subject" required />
+
+				<Label htmlFor="message">Message</Label>
+				<Textarea id="message" name="message" required />
 
 				<button
-					className="bg-gradient-to-br relative group/btn from-black dark:from-zinc-900 dark:to-zinc-900 to-neutral-600 block dark:bg-zinc-800 w-full text-white rounded-md h-10 font-medium shadow-[0px_1px_0px_0px_#ffffff40_inset,0px_-1px_0px_0px_#ffffff40_inset] dark:shadow-[0px_1px_0px_0px_var(--zinc-800)_inset,0px_-1px_0px_0px_var(--zinc-800)_inset]"
 					type="submit"
+					disabled={isPending}
+					className={cn(
+						"group/btn relative block h-10 w-full rounded-md bg-gradient-to-br from-black to-neutral-600 font-medium text-white shadow-[0px_1px_0px_0px_#ffffff40_inset,0px_-1px_0px_0px_#ffffff40_inset] dark:bg-zinc-800 dark:from-zinc-900 dark:to-zinc-900 dark:shadow-[0px_1px_0px_0px_var(--zinc-800)_inset,0px_-1px_0px_0px_var(--zinc-800)_inset]",
+					)}
 				>
-					Send &rarr;
+					{isPending ? "Sending..." : "Send"}
 					<BottomGradient />
 				</button>
+				{state?.message && <div className={cn("mt-2", state.status === "success" ? "text-green-600" : "text-red-600")}>{state.message}</div>}
 			</form>
 		</div>
 	);
@@ -55,22 +55,8 @@ export function ContactForm() {
 const BottomGradient = () => {
 	return (
 		<>
-			<span className="group-hover/btn:opacity-100 block transition duration-500 opacity-0 absolute h-px w-full -bottom-px inset-x-0 bg-gradient-to-r from-transparent via-cyan-500 to-transparent" />
-			<span className="group-hover/btn:opacity-100 blur-sm block transition duration-500 opacity-0 absolute h-px w-1/2 mx-auto -bottom-px inset-x-10 bg-gradient-to-r from-transparent via-indigo-500 to-transparent" />
+			<span className="absolute inset-x-0 -bottom-px block h-px w-full bg-gradient-to-r from-transparent via-cyan-500 to-transparent opacity-0 transition duration-500 group-hover/btn:opacity-100" />
+			<span className="absolute inset-x-10 -bottom-px mx-auto block h-px w-1/2 bg-gradient-to-r from-transparent via-indigo-500 to-transparent opacity-0 blur-sm transition duration-500 group-hover/btn:opacity-100" />
 		</>
-	);
-};
-
-const LabelInputContainer = ({
-															 children,
-															 className,
-														 }: {
-	children: React.ReactNode;
-	className?: string;
-}) => {
-	return (
-		<div className={cn("flex flex-col space-y-2 w-full", className)}>
-			{children}
-		</div>
 	);
 };

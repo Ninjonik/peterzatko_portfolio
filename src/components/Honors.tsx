@@ -1,7 +1,6 @@
 "use client";
 
 import React, { useState } from "react";
-import { TracingBeam } from "./ui/TracingBeam";
 import Link from "next/link";
 
 interface Honor {
@@ -180,26 +179,26 @@ export const Honors = () => {
 				<div className="mb-16 grid grid-cols-1 gap-8 lg:grid-cols-2">
 					{/* Competitive Awards Column */}
 					<div className="col-span-1">
-						<TracingBeam className="px-6">
+						<div className="px-6">
 							<div className="relative mx-auto max-w-xl pt-4 antialiased">
 								<h3 className="mb-8 bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-center text-3xl font-bold text-transparent">
 									Competitive Awards
 								</h3>
 								{awardsData.map((honor, index) => renderHonorItem(honor, index))}
 							</div>
-						</TracingBeam>
+						</div>
 					</div>
 
 					{/* Skills & Certifications Column */}
 					<div className="col-span-1">
-						<TracingBeam className="px-6">
+						<div className="px-6">
 							<div className="relative mx-auto max-w-xl pt-4 antialiased">
 								<h3 className="mb-8 bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-center text-3xl font-bold text-transparent">
 									Skills & Certifications
 								</h3>
 								{certificationsData.map((honor, index) => renderHonorItem(honor, index))}
 							</div>
-						</TracingBeam>
+						</div>
 					</div>
 				</div>
 			</div>

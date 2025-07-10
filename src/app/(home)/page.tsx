@@ -19,9 +19,8 @@ const HomePage = () => {
 				titleComponent={
 					<>
 						<h1 className="text-4xl font-semibold text-black dark:text-white">
-							Unleash the power of <br />
+							Building <br />
 							<span className="mt-1 text-4xl font-bold leading-none md:text-[6rem]">
-								{" "}
 								<FlipWords words={["modern", "beautiful", "responsive", "customizable", "performant"]} /> websites
 							</span>
 						</h1>
@@ -38,52 +37,52 @@ const HomePage = () => {
 				/>
 			</ContainerScroll>
 			<div className="mx-auto mb-16 grid w-full max-w-7xl grid-cols-1 gap-4 lg:grid-cols-3">
-				<WobbleCard containerClassName="col-span-1 lg:col-span-2 h-full bg-pink-800 min-h-[500px] lg:min-h-[300px]" className="">
+				<WobbleCard containerClassName="col-span-1 lg:col-span-2 h-full bg-blue-900 min-h-[500px] lg:min-h-[300px]" className="">
 					<div className="max-w-xs">
-						<h2 className="text-balance text-left text-base font-semibold tracking-[-0.015em] text-white md:text-xl lg:text-3xl">
-							Crafting Digital Experiences with Passion & Precision
-						</h2>
+						<h2 className="text-balance text-left text-base font-semibold tracking-[-0.015em] text-white md:text-xl lg:text-3xl">About Me</h2>
 						<p className="mt-4 text-left text-base/6 text-neutral-200">
-							Dive into the world of web development with me, where every line of code tells a story. With a deep-rooted love for JavaScript,
-							React, and TypeScript, I transform complex problems into elegant solutions. My portfolio showcases a blend of creativity,
-							technical skill, and a relentless pursuit of excellence. Let&apos;s build something amazing together.
+							Hello there! 👋 My name is Peter Zaťko and I am a local 🇸🇰 Slovak developer with a passion for creating modern, beautiful,
+							responsive, customizable, performant and meticulously crafted websites. When I'm not coding, you can find me playing video games,
+							learning about fictional worlds, hanging out with friends, enjoying the moment or travelling all accross my beautiful homeland of
+							Slovakia.
 						</p>
 					</div>
 					<Image
-						src="/img/projects/hoi4intel.png"
-						width={500}
-						height={500}
+						src="/img/personal1.jpg"
+						width={300}
+						height={1000}
 						alt="linear demo image"
-						className="absolute -bottom-10 -right-4 rounded-2xl object-contain grayscale filter lg:-right-[20%]"
+						className="absolute -bottom-10 -right-2 rounded-2xl bg-red-500 object-center grayscale filter"
 					/>
 				</WobbleCard>
 				<WobbleCard containerClassName="col-span-1 min-h-[300px]">
 					<h2 className="max-w-80 text-balance text-left text-base font-semibold tracking-[-0.015em] text-white md:text-xl lg:text-3xl">
-						Mastering the Art of Web Design
+						My Skills
 					</h2>
 					<p className="mt-4 max-w-[26rem] text-left text-base/6 text-neutral-200">
-						From the subtle nuances of CSS to the dynamic capabilities of Tailwind CSS and Material UI, my journey in web design is a testament
-						to creativity meeting functionality. Crafting seamless user experiences with shadcn/ui and exploring the latest in modern UI
-						libraries, I bring websites to life with precision and flair. Let&apos;s shape the digital world together, one pixel at a time.
+						My primary focus is set on web development. I have gained a lot of experience in various frontend and backend technologies and
+						frameworks especially in this area. I love to learn about new things and to look for new challenges that can push me forward and
+						along the road craft something that people will appreciate and use in their daily lives.
 					</p>
 				</WobbleCard>
-				<WobbleCard containerClassName="col-span-1 lg:col-span-3 bg-blue-900 min-h-[500px] lg:min-h-[600px] xl:min-h-[300px]">
+				<WobbleCard containerClassName="col-span-1 lg:col-span-3 bg-pink-800 min-h-[500px] lg:min-h-[600px] xl:min-h-[300px]">
 					<div className="max-w-sm">
 						<h2 className="max-w-sm text-balance text-left text-base font-semibold tracking-[-0.015em] text-white md:max-w-lg md:text-xl lg:text-3xl">
-							Elevating Experiences Through Backend Mastery
+							My Journey
 						</h2>
 						<p className="mt-4 max-w-[26rem] text-left text-base/6 text-neutral-200">
-							Dive into the core of digital innovation with me, where PHP Laravel and Python form the backbone of robust applications. Crafting
-							seamless Discord bots and APIs, I bridge the gap between idea and implementation, ensuring every project not only meets but
-							exceeds expectations. Lets engineer solutions that drive success and redefine what is possible in the digital realm.
+							Ever since about 10 years ago, when I first started my journey in web development - by creating web portals for small Minecraft
+							communities, I have been eager to learn more and more about the fascinating and endless world of web development. From mastering
+							the intricacies of basic web technologies such as HTML and CSS, to creating immersive experiences with JavaScript and putting it
+							all together with backend frameworks such as Laravel or PHP, occasionally stumbling across Discord bots or game development.
 						</p>
 					</div>
 					<Image
-						src="/img/projects/hoi4intel_800_600.png"
+						src="/img/oldsite.png"
 						width={600}
 						height={400}
 						alt="Backend development demo image"
-						className="absolute -bottom-[20%] right-0 rounded-2xl object-center"
+						className="absolute -bottom-[10%] right-0 rounded-2xl object-center"
 					/>
 				</WobbleCard>
 			</div>
