@@ -1,14 +1,15 @@
 "use client";
-import React, { useActionState, useEffect, useRef } from "react";
+import React, { useEffect, useRef } from "react";
 import { Label } from "@/components/ui/Label";
 import { Input } from "@/components/ui/Input";
 import { cn } from "@/lib/utils";
 import { Textarea } from "@/components/ui/Textarea";
 import sendContactEmail from "./contact";
+import { useFormState } from "react-dom";
 
 export function ContactForm() {
 	const formRef = useRef<HTMLFormElement>(null);
-	const [state, formAction, isPending] = useActionState(sendContactEmail, null);
+	const [state, formAction, isPending] = useFormState(sendContactEmail, null);
 
 	useEffect(() => {
 		if (state?.status === "success") {
@@ -38,6 +39,7 @@ export function ContactForm() {
 
 				<button
 					type="submit"
+					name={"submit"}
 					disabled={isPending}
 					className={cn(
 						"group/btn relative block h-10 w-full rounded-md bg-gradient-to-br from-black to-neutral-600 font-medium text-white shadow-[0px_1px_0px_0px_#ffffff40_inset,0px_-1px_0px_0px_#ffffff40_inset] dark:bg-zinc-800 dark:from-zinc-900 dark:to-zinc-900 dark:shadow-[0px_1px_0px_0px_var(--zinc-800)_inset,0px_-1px_0px_0px_var(--zinc-800)_inset]",

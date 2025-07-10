@@ -8,18 +8,21 @@ export default async function sendContactEmail(prevState: any, formData: FormDat
 	const subject = formData.get("subject") as string;
 	const message = formData.get("message") as string;
 
+	console.log("yo", firstname, lastname, email, subject, message);
+
 	if (!firstname || !lastname || !email || !subject || !message) {
 		return { status: "error", message: "Missing required fields" };
 	}
+
 	const transporter = nodemailer.createTransport({
 		host: "mail.igportals.eu",
 		port: 587,
 		secure: false,
 		auth: {
-			user: "noreply@igportals.eu",
-			pass: "lnaQySXuSoGAlbfZuAqb4SNKVm9dsr9zFMcqnxVEyUUQwcoGUr5TZB4z3dUJ7aWV",
+			user: "auto@igportals.eu",
+			pass: "POAopasdkpaoOPASaopsdk4189",
 		},
-		tls: { rejectUnauthorized: false },
+		tls: {},
 	});
 	try {
 		await transporter.sendMail({

@@ -4,8 +4,6 @@ import Image from "next/image";
 import Footer from "@/components/layout/Footer";
 import { FlipWords } from "@/components/ui/FlipWords";
 import { HeroShowcase } from "@/components/HeroShowcase";
-import { Lamp } from "@/components/ui/Lamp";
-import { ContactForm } from "@/components/ContactForm";
 import { WobbleCard } from "@/components/ui/WobbleCard";
 import { Skills } from "@/components/Skills";
 import { Honors } from "@/components/Honors";
@@ -108,12 +106,12 @@ const HomePage = () => {
 					</p>
 				</div>
 			</div>*/}
-			<Lamp />
+			{/*			<Lamp />
 			<section className={"w-screen bg-slate-950"}>
 				<div className={"relative -top-48 flex w-full flex-col items-center justify-center bg-slate-950"}>
 					<ContactForm />
 				</div>
-			</section>
+			</section>*/}
 
 			<Footer />
 		</article>
