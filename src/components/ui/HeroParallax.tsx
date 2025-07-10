@@ -18,6 +18,7 @@ export const HeroParallax = ({
 	const thirdRow = products.slice(10, 15);
 	const ref = React.useRef(null);
 	const { scrollYProgress } = useScroll({
+		// @ts-ignore
 		target: ref,
 		offset: ["start start", "end start"],
 	});

@@ -40,9 +40,9 @@ const HomePage = () => {
 						<h2 className="text-balance text-left text-base font-semibold tracking-[-0.015em] text-white md:text-xl lg:text-3xl">About Me</h2>
 						<p className="mt-4 text-left text-base/6 text-neutral-200">
 							Hello there! 👋 My name is Peter Zaťko and I am a local 🇸🇰 Slovak developer with a passion for creating modern, beautiful,
-							responsive, customizable, performant and meticulously crafted websites. When I'm not coding, you can find me playing video games,
-							learning about fictional worlds, hanging out with friends, enjoying the moment or travelling all accross my beautiful homeland of
-							Slovakia.
+							responsive, customizable, performant and meticulously crafted websites. When I&apos;m not coding, you can find me playing video
+							games, learning about fictional worlds, hanging out with friends, enjoying the moment or travelling all across my beautiful
+							homeland of Slovakia.
 						</p>
 					</div>
 					<Image
